@@ -1,0 +1,15 @@
+{
+  "name": "luxonis-task",
+  "version": "1.0.0",
+  "scripts": {
+    "run-server": "tsc app/server/main.ts",
+    "run-client": "tsx app/client/main.ts"
+  },
+  "author": "David Fencl",
+  "devDependencies": {
+    "tsx": "^4.7.0"
+  },
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
+}
