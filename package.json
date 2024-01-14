@@ -2,11 +2,13 @@
   "name": "luxonis-task",
   "version": "1.0.0",
   "scripts": {
-    "run-server": "tsc app/server/main.ts",
+    "run-server": "tsx app/server/main.ts",
     "run-client": "tsx app/client/main.ts"
   },
+  "type": "module",
   "author": "David Fencl",
   "devDependencies": {
+    "@types/node": "^20.11.0",
     "tsx": "^4.7.0"
   },
   "dependencies": {

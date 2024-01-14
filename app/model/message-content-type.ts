@@ -1,0 +1,1 @@
+export type MessageContentType = (string | number | boolean)[];
