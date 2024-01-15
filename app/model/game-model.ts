@@ -6,7 +6,6 @@ export class GameModel {
     readonly challenger: UserModel;
     readonly opponent: UserModel;
     readonly wordToGuess: string;
-    private isAccepted: boolean = false;
     private guessAttempts: number = 0;
 
 
@@ -15,14 +14,6 @@ export class GameModel {
         this.challenger = challenger;
         this.opponent = opponent;
         this.wordToGuess = wordToGuess;
-    }
-
-    public getIsAccepted(): boolean {
-        return this.isAccepted
-    }
-
-    setIsAccepted(value: boolean) {
-        this.isAccepted = value;
     }
 
     getGuessAttempts(): number {

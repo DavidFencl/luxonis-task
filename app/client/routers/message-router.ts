@@ -12,6 +12,11 @@ import {
 } from "../handlers/routing-handlers";
 import {ClientState} from "../state/client-state";
 
+/**
+ * Router used for decoding & routing incoming messages from the server. Messages are routed based on their type.
+ * If unsupported type is received error is logged and nothing happens.
+ * @param message - Encoded message
+ */
 export function routeMessage(message: string) {
     const [messageType, messageContent] = decodeMessage(message);
 

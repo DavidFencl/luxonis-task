@@ -1,8 +1,11 @@
 import {Socket} from "node:net";
 import {routeMessage} from "../routers/message-router";
 
-type RelationshipToGame =  'challenger' | 'opponent' | null;
+type RelationshipToGame = 'challenger' | 'opponent' | null;
 
+/**
+ * Class acting as clients state. Singleton pattern is used for data consistency across the application.
+ */
 export class ClientState {
     private static _instance: ClientState;
 
@@ -12,7 +15,7 @@ export class ClientState {
 
     private activeGameId: number | null = null;
 
-    private relationToGame: RelationshipToGame= null;
+    private relationToGame: RelationshipToGame = null;
 
     private isConnected: boolean = false;
 

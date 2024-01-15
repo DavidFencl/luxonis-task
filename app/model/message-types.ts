@@ -1,3 +1,6 @@
+/**
+ * Enum representing all supported message types.
+ */
 export enum MessageTypeEnum {
     ERROR,
     LOG_IN,

@@ -1,6 +1,10 @@
 import {ClientState} from "../state/client-state";
 import {rl} from "../utils/rl";
 
+/**
+ * Handlers for routing events.
+ */
+
 export function logInSuccessful(id: number) {
     console.log(`Log-In success! Your id is ${id}. You can now start playing.`)
     ClientState.getClientState().setIsLoggedIn(true);

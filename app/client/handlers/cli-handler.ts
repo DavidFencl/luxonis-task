@@ -3,7 +3,7 @@ import {ClientState} from "../state/client-state";
 import {rl} from "../utils/rl";
 
 /**
- * CLI input handler. It handles user input. Returns -1 if user want's to exit. 0 otherwise
+ * CLI input handler. It handles user input based on current user state - whether he's unconnected, connected or connected & logged-in..
  */
 export function handleCliInput() {
     rl.once('line', (input) => {

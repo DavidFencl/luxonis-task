@@ -1,6 +1,8 @@
 import {GameModel} from "../../model/game-model";
 
-
+/**
+ * Repository class used for storing information about ongoing games.
+ */
 export class GameRepository {
     private static instance: GameRepository;
 

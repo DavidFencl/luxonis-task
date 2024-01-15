@@ -10,6 +10,11 @@ import {
     sendErrorMessage
 } from "../handlers/routing-handlers";
 
+/**
+ * Routing function used for routing incoming client messages.  Error is sent back to client if unsupported message type is provided.
+ * @param message - Incoming encoded message
+ * @param user - User who sent given message
+ */
 export function routeMessage(message: string, user: UserModel) {
     const [messageType, messageContent] = decodeMessage(message);
     const {socket} = user;

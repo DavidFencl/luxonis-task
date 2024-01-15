@@ -89,7 +89,6 @@ function handleChallengeRejected(game: GameModel) {
 }
 
 function handleChallengeAccepted(game: GameModel) {
-    game.setIsAccepted(true);
     game.challenger.socket.write(encodeMessage(MessageTypeEnum.CHALLENGE_ACCEPTED, [game.opponent.id, game.id]))
 }
 

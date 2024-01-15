@@ -18,7 +18,7 @@ import {logInAction} from "../actions/log-in-action";
  *  Connect over ICP
  *  Exit
  *
- * @param input - Input from console. Numeric string is expected. String isn't cast to number for sake of efficiency.
+ * @param input - Input from console.
  * @return -1 if app should exit, 0 otherwise.
  */
 export function routeCliInputUnconnected(input: string): number {
@@ -46,15 +46,14 @@ export function routeCliInputUnconnected(input: string): number {
 }
 
 /**
- * Function is used for routing user input to appropriate action whe user is connected.
+ * Function is used for routing user input to appropriate action when user is connected but isn't logged-in just yet.
  * Actions:
  *
  *  Help
- *  Connect over TCP
- *  Connect over ICP
- *   Exit
+ *  Log-In
+ *  Exit
  *
- * @param input - Input from console. Numeric string is expected. String isn't cast to number for sake of efficiency.
+ * @param input - Input from console.
  * @return -1 if app should exit, 0 otherwise.
  */
 export function routeCliInputConnected(input: string): number {
@@ -78,15 +77,15 @@ export function routeCliInputConnected(input: string): number {
 }
 
 /**
- * Function is used for routing user input to appropriate action whe user is connected.
+ * Function is used for routing user input to appropriate action when user is connected & is logged-in.
  * Actions:
  *
  *  Help
  *  Connect over TCP
  *  Connect over ICP
- *   Exit
+ *  Exit
  *
- * @param input - Input from console. Numeric string is expected. String isn't cast to number for sake of efficiency.
+ * @param input - Input from console.
  * @return -1 if app should exit, 0 otherwise.
  */
 export function routeCliInputLoggedIn(input: string): number {
