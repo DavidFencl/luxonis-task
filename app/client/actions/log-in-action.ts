@@ -1,5 +1,5 @@
 import {ClientState} from "../state/client-state";
-import {encodeMessage} from "../../utils/mesasge-utils";
+import {encodeMessage} from "../../utils/message-utils";
 import {MessageTypeEnum} from "../../model/message-types";
 
 export function logInAction(password: string) {

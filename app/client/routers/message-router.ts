@@ -1,4 +1,4 @@
-import {decodeMessage} from "../../utils/mesasge-utils";
+import {decodeMessage} from "../../utils/message-utils";
 import {MessageTypeEnum} from "../../model/message-types";
 import {
     challengeAccepted,

@@ -1,5 +1,5 @@
 import {Socket} from "node:net";
-import {encodeMessage} from "../../utils/mesasge-utils";
+import {encodeMessage} from "../../utils/message-utils";
 import {MessageTypeEnum} from "../../model/message-types";
 import {UserRepository} from "../repository/user-repository";
 import {MessageContentType} from "../../model/message-content-type";

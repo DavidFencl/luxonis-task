@@ -1,5 +1,5 @@
 import {MessageTypeEnum} from "../../model/message-types";
-import {decodeMessage} from "../../utils/mesasge-utils";
+import {decodeMessage} from "../../utils/message-utils";
 import {UserModel} from "../../model/user-model";
 import {
     handleChallengeOpponent,
