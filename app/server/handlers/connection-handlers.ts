@@ -8,7 +8,7 @@ import {UserModel} from "../../model/user-model";
  * @param connectionType - Type of connection - either TCP or IPC (Unix socket). It is only used for logging appropriate message.
  */
 export function handleNewConnection(socket: Socket, connectionType: 'IPC' | 'TCP') {
-    console.debug(connectionType === 'IPC' ? `New IPC connection accepted!` : `New TCP connection accepted from ${socket.remoteAddress}:${socket.remotePort}`)
+    console.info(connectionType === 'IPC' ? `New IPC connection accepted!` : `New TCP connection accepted from ${socket.remoteAddress}:${socket.remotePort}`)
 
     UserRepository.getRepository().addUser(new UserModel(socket))
 }

@@ -21,9 +21,6 @@ export class ClientState {
 
     private isLoggedIn: boolean = false;
 
-    constructor() {
-    }
-
     public static getClientState(): ClientState {
         if (!this._instance) {
             this._instance = new ClientState()

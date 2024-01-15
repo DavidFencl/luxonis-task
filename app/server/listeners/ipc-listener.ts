@@ -7,7 +7,7 @@ export function initIpcListener() {
     const server = net
         .createServer()
         .listen(IPC_CONFIG.socketPath, IPC_CONFIG.backlog)
-        .on('listening', () => console.debug('IPC listener running'))
+        .on('listening', () => console.info('IPC listener running'))
         .on('connection', (socket) => handleNewConnection(socket, 'IPC'))
         // If unix socket is already in use it is necessary to unlink it first before attempting to connect to it again.
         .on('error', (e) => {

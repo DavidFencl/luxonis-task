@@ -6,7 +6,7 @@ export function initTcpListener() {
     net
         .createServer()
         .listen(TCP_CONFIG.port, TCP_CONFIG.ip, TCP_CONFIG.backlog)
-        .on('listening', () => console.debug('TCP listener running'))
+        .on('listening', () => console.info('TCP listener running'))
         .on('connection', socket => handleNewConnection(socket, 'TCP'))
     ;
 }

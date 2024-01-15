@@ -25,7 +25,6 @@ function handleLogInFail(socket: Socket) {
 }
 
 function handleLogInSuccess(socket: Socket, user: UserModel) {
-    console.log('log in success');
     socket.write(encodeMessage(MessageTypeEnum.LOG_IN_SUCCESS, [user.id]));
 }
 

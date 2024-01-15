@@ -28,8 +28,4 @@ export class UserRepository {
     public addUser(user: UserModel) {
         this.users.set(user.id, user);
     }
-
-    public removeUser(userId: number) {
-        this.users.delete(userId);
-    }
 }
