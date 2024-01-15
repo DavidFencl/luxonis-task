@@ -12,7 +12,7 @@ Using a language of choice from the following:  - Rust -
 Typescript - Python - C/C++ Without using external libraries (unless necessary), write two applications. These
 applications will be a client and a server app. They will communicate over a TCP socket and the exact protocol on
 top of that is up to you. Note: using just utf8 strings will have a negative impact on the judgement (hint - custom
-binary protocol is expected). The game flow is as follows:  . Optional/bonus: offer a website that displays the progress
+binary protocol is expected). Optional/bonus: offer a website that displays the progress
 of all the matches, for a third
 party to observe. JUDGEMENT:  The following things play role for passing to the interview
 stage:  - Understanding of both the technologies used and the language chosen. - Complexity of the chosen solution. -
